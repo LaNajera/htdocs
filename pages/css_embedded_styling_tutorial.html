@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+<!-- css is useful for font families, background images, font color, etc.
+can style 3 ways:
+	inine
+		use the style attribute within the element tag you want to style i.e. paragraph
+	stylesheet; embedded within the document
+	external style sheet
+
+	css weight: which rule is heavier, inline styling rules are heavier and override embedded style sheets
+-->
+	
+	<title>css embedded styling</title>
+	<style type="text/css">
+		p{
+			color: red;
+			font-family: helvetica;
+		}
+	</style>
+</head>
+<body>
+
+<p>embeded styling. requires separating style rules by semicolon... in the head name the element you want to style by selecting it, in the case of paragraph just type p, then list out all of your style rules still demarked by a semicolon</p>
+
+<p>second paragraph</p>
+
+something outside of a p tag
+<p style="color:blue; font-family:arial">example of css weighting. here inline styles are overriding the embedded style rules in the head</p>
+
+</br>
+</br>
+<a href="../index.html">link back to index</a></br>
+</br>
+
+

@@ -11,15 +11,43 @@ all images need an alt value, alt text about the image for google search engines
 
 if the image doesn't load, the width/height attributes will tell the browser how to save that space in the layout for the missing image and you will see the broken image link with that amount of space saved -->
 
-	<title>html tutorial images</title>
+	<title>images and file paths</title>
 </head>
 <body>
-<h1>images tutorial</h1>
+	<h1>images and file paths tutorial</h1>
 
-	<img src="cartes-cantabria1.png" width="800" height="" alt="Cartes, Cantabria, Espana">
+	<img src="cartes-cantabria1.png" width="800" height="" alt="Cartes, Cantabria, Espana"></br>
+	</br>
+	</br>
+
+	<h1>below uses an image located in a directory rather than at the root</h1></br>
+	<img src="images/flamenco-sigala.png" width="800" height="" alt="flamenco dancer">
 </br>
 </br>
 
+<!-- relative file paths vs abosolute file paths
 
-<a href="index.html">link back to index</a></br>
+relative urls
+just use the file name and you have to name the dir structure to where the images or assets are
+
+absolute urls
+absolute url for index = localhost:8888/index.html this can be used to link 
+if you use absolute urls for things like images, i.e. http://localhost:8888/cartes-cantabria1.png and if you ever move your site, imagine the localhost:8888 is the top domain, then things break. or if you are pointing to content not your own and you are not in control of that path health it can also break
+
+remember to avoid using spaces in folder and file names
+
+/ at the beginning of a file path means "go back to the rood dir"
+
+../ means go up one folder
+
+filename/ means look in that folder
+
+-->
+
+
+
+
+<a href="../index.html">link back to index</a></br>
 </br>
+
+
